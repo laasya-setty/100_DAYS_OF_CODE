@@ -1,0 +1,48 @@
+/*
+// Sample code to perform I/O:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int num;
+	cin >> num;										// Reading input from STDIN
+	cout << "Input number is " << num << endl;		// Writing output to STDOUT
+}
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
+
+// Write your code here
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++)
+    {
+        int cnt = 0;
+        char a[10000], b[10000];
+        scanf("%s", a);
+        scanf("%s", b);
+        int l1 = strlen(a), l2 = strlen(b);
+        for (int i = 0; i < l1; i++)
+        {
+            for (int j = 0; j < l2; j++)
+            {
+                if (a[i] == b[j])
+                {
+                    ++cnt;
+                    b[j] = '0';
+                    break;
+                }
+            }
+        }
+        printf("%d\n", l1 + l2 - (2 * cnt));
+    }
+    return 0;
+}
