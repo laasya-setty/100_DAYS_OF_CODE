@@ -1,0 +1,129 @@
+Akash and Vishal are quite fond of travelling. They mostly travel by railways. They were travelling in a train one day and they got interested in the seating arrangement of their compartment. The compartment looked something like
+
+
+So they got interested to know the seat number facing them and the seat type facing them. The seats are denoted as follows :
+
+Window Seat : WS
+Middle Seat : MS
+Aisle Seat : AS
+
+You will be given a seat number, find out the seat number facing you and the seat type, i.e. WS, MS or AS.
+
+INPUT
+First line of input will consist of a single integer T denoting number of test-cases. Each test-case consists of a single integer N denoting the seat-number.
+
+OUTPUT
+For each test case, print the facing seat-number and the seat-type, separated by a single space in a new line.
+
+CONSTRAINTS
+1<=T<=105
+1<=N<=108
+
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+class TestClass {
+      public static int s;
+     public static void main(String args[] ) throws Exception {
+    
+  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    
+   int t=Integer.parseInt(br.readLine());
+    for(int i=1;i<=t;i++)
+    {
+       int n=Integer.parseInt(br.readLine());
+        if(n%12==0||n%12==1)
+        {
+            if(n%12==1)
+            {
+             s=n+11;
+             System.out.printf("%d WS",s);
+            }
+            else{
+                s=n-11;
+                System.out.printf("%d WS",s);
+            }
+
+        }
+        else if(n%12==6||n%12==7)
+        {
+            if(n%12==6)
+            {
+                s=n+1;
+                System.out.printf("%d WS",s);
+            }
+            else{
+                s=n-1;
+                System.out.printf("%d WS",s);
+            }
+        }
+        else if(n%12==2||n%12==11)
+        {
+            if(n%12==2){
+                s=n+9;
+            System.out.printf("%d MS",s);
+            }
+            else{
+                s=n-9;
+                System.out.printf("%d MS",s);
+
+            }
+        }
+        else if(n%12==5||n%12==8)
+        {
+            if(n%12==5)
+            {
+                s=n+3;
+                System.out.printf("%d MS",s);
+            }
+            else{
+                s=n-3;
+                System.out.printf("%d MS",s);
+            }
+        }
+        else if(n%12==3||n%12==10)
+        {
+            if(n%12==3)
+                {
+                s=n+7;
+                System.out.printf("%d AS",s);
+            }
+            else{
+                s=n-7;
+                System.out.printf("%d AS",s);
+            }
+        }
+        else{
+            if(n%12==4)
+            {
+                s=n+5;
+                System.out.printf("%d AS",s);
+            }
+            else{
+                s=n-5;
+                System.out.printf("%d AS",s);
+            }
+        }
+        System.out.println(" ");
+
+    }
+    
+           
+        
+    }
+}
+
+
+
+    
+
+
+
+        
+
+    
+
