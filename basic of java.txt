@@ -1,0 +1,2 @@
+this file is created when i am learning git .This is just a duplicate file.
+Check anyother file with same name to see original content.

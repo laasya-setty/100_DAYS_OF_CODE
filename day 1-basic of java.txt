@@ -1,7 +1,7 @@
 //hello everyone
 //welcome to day 1 of @_100DaysOfCode
 
-
+//java codes
 
 #code 1
 /* Java output formatting*/
