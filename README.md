@@ -1,5 +1,5 @@
 # 100_DAYS_OF_CODE
-Hey everyone! This is my 100 days coding challenge. Join me, let's code together. ;)
+Hey everyone! This is my 100 days coding challenge. Join me, let's code together. :)
 Target: 1.) Java
         2.) Git
         3.) Frontend Development
