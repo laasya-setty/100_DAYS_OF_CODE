@@ -5,7 +5,7 @@ public class Anagram {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
-        String b = sc.nextLine();
+        String b = sc.nextLine();                      //same characters but diff words or same words is anagram
         sc.close();
         char[] str1 = a.toCharArray();
         char[] str2 = b.toCharArray();
