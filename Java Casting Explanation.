@@ -1,0 +1,25 @@
+----------------------
+| Child c=new Child() |
+----------------------
+-> can access both parent and child class variables and methods.
+
+Upcasting
+------------------------
+| Parent p=new Child();  |
+------------------------
+->This statment means that, parent object is referencing to child object.
+->this parent object can now access i)its own method and variables, and if the method is overridden by child class then it gives overridden method(in child) as output.
+                                    ii)cannot access variables and methods in child class ,can access only which are overridden.
+  
+ Downcasting
+ -----------------------
+| Parent p=new Child()  |
+| Child c=(Child)p;     |
+-------------------------
+-> Downcasting throws a error in Java generally, so we do dwencasting explicitly using above given syntax
+->The last statment say that,the child object c is referencing to parent object p explicitly where p is referencing to child(in first statment).
+->c can access both variables and methods from parent class which are not overridden.
+->if any of the methods or variables are ovverriden then it uses that.
+-> Can access its own methods(child) and variables.
+
+
