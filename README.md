@@ -1,6 +1,6 @@
 # 100_DAYS_OF_CODE
 Hey everyone! This is my 100 days coding challenge. Join me, let's code together. :)
-Target: 1.) Java
+Target: 1.) Competetive Java
         2.) Git
         3.) Frontend Development
 Start Date: 12/07/2020 End Date: 24/9/2020.
