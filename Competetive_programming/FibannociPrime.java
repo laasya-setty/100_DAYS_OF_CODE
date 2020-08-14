@@ -1,3 +1,77 @@
+*Problem Description
+
+Given two numbers n1 and n2
+
+Find prime numbers between n1 and n2, then
+
+Make all possible unique combinations of numbers from the list of the prime numbers you found in step 1. 
+
+From this new list, again find all prime numbers.
+
+Find the smallest (a) and largest (b) number from the 2nd generated list, also count of this list.
+
+Consider the smallest and largest number as the 1st and 2nd number to generate the Fibonacci series respectively till the count (number of primes in the 2nd list).
+
+Print the last number of a Fibonacci series as an output
+
+
+Constraints
+2 <= n1, n2 <= 100
+
+n2 - n1 >= 35
+
+
+Input Format
+One line containing two space-separated integers n1 and n2.
+
+
+Output
+The last number of a generated Fibonacci series.
+
+
+Timeout
+1
+
+
+Test Case
+Example 1:
+
+
+Input:
+
+2 40
+Output:
+
+13158006689
+Example 2:
+
+
+Input:
+
+30 70
+Output:
+
+2027041 
+Explanation:
+
+
+1st prime list=[31, 37, 41, 43, 47, 53, 59, 61, 67]
+
+
+2nd prime list generated form combination of 1st prime list = [3137, 5953, 5347, 6761, 3761, 4337, 6737, 6131, 3767, 4759, 4153, 3167, 4159, 6143]
+
+
+the smallest prime in 2nd list=3137
+
+the largest prime in 2nd list=6761
+
+
+Therefore, the last number of a Fibonacci series i.e. 14th Fibonacci number in the series that has 3137 and 6761 as the first 2 numbers is 2027041
+
+ */
+
+
+
 package Competetive_programming;
 import java.util.ArrayList;
 import java.util.Collections;
