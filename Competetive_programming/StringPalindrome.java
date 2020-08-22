@@ -1,3 +1,6 @@
+.*A word is a palindrome if it reads the same when the order of its characters is reversed. For instance, "123321", "RADAR" and "step on no pets" 
+	are palindromes. Write a program to determine if a string is a palindrome*/
+
 package Competetive_programming;
 import java.util.Scanner;
 
